@@ -17,7 +17,6 @@ function obterValor(mensagem){
     // * retora o valor válido
     return valor;
 }
-    
 // * função para calcular o troco 
 function calcTroco(){
     // * solicitando o nome do produto
