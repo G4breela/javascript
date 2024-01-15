@@ -18,7 +18,6 @@ function obterValor(mensagem){
     return valor;
 }
     
-
 // * função para calcular o troco 
 function calcTroco(){
     // * solicitando o nome do produto
