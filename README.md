@@ -13,3 +13,5 @@ Aqui você encontrará os exercícios feitos durante as aulas do curso e os desa
 
 <a href="https://g4breela.github.io/javascript/desafios/d005/index.html" target="_blank"> Executar Desafio 005 </a>
 
+<a href="https://g4breela.github.io/javascript/desafios/calculadora-imc/index.html">Executar Calculadora de IMC</a>
+
