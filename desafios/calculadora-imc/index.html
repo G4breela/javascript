@@ -1,81 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora IMC</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
     <main>
-        <div id="calculo">
-            <header>
-                <h1>Calculadora de IMC</h1>
-                <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
-            </header>
-                 <form id="calcForm">
-                        <div id="value">
-                            <div class="labels">
-                                <label for="altura">Qual sua altura?</label>
-                                <label for="peso">Qual seu peso?</label>
-                            </div>
-                        
-                            <div class="inputs">
-                                <input type="number" id="altura" name="altura" placeholder="ex: 1.70" step="0.01" max="2.51"  required>
-                                <input type="number" id="peso" name="peso" placeholder="ex: 69.20" step="0.001" required>
-                            </div>
-        
-                            <button id="calc" type="submit" class="button-result">Calcular</button>
-                            <button type="reset" class="button-clean">Limpar</button>
-                        </div>
-                 </form>     
-        </div>
-        <p  class="button-result"> Seu IMC : <span id="res"></span></p>
-        <div id="tabela">
-            <table>
-                <caption>Interpretação do IMC segundo a OMS</caption>
-                <thead>
-                    <tr>
-                        <th>IMC</th>
-                        <th>Classificação</th>
-                        <th>Grau</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Menor que 18.5</td>
-                        <td>Magreza</td>
-                        <td>0</td>
-                    </tr>
+      <div id="calculo">
+        <header>
+          <h1>Calculadora de IMC</h1>
+          <p>
+            IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela
+            Organização Mundial de Saúde para calcular o peso ideal de cada
+            pessoa.
+          </p>
+        </header>
+        <form id="calcForm">
+          <div id="value">
+            <div class="labels">
+              <label for="altura">Qual sua altura?</label>
+              <label for="peso">Qual seu peso?</label>
+            </div>
 
-                    <tr>
-                        <td>Entre 18.5 e 24.9</td>
-                        <td>Normal</td>
-                        <td>0</td>
-                    </tr>
+            <div class="inputs">
+              <input
+                type="number"
+                id="altura"
+                name="altura"
+                placeholder="ex: 1.70"
+                step="0.01"
+                max="2.51"
+                required
+              />
+              <input
+                type="number"
+                id="peso"
+                name="peso"
+                placeholder="ex: 69.20"
+                step="0.001"
+                required
+              />
+            </div>
 
-                    <tr>
-                        <td>Entre 25.0 e 29.9</td>
-                        <td>Sobrepeso</td>
-                        <td>I</td>
-                    </tr>
+            <button id="calc" type="submit" class="button-result">
+              Calcular
+            </button>
+            <button type="reset" class="button-clean">Limpar</button>
+          </div>
+        </form>
+      </div>
+      <p class="button-result">Seu IMC : <span id="res"></span></p>
+      <div id="tabela">
+        <table>
+          <caption>
+            Interpretação do IMC segundo a OMS
+          </caption>
+          <thead>
+            <tr>
+              <th>IMC</th>
+              <th>Classificação</th>
+              <th>Grau</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Menor que 18.5</td>
+              <td>Magreza</td>
+              <td>0</td>
+            </tr>
 
-                    <tr>
-                        <td>Entre 30.0 e 39.9</td>
-                        <td>Obesidade</td>
-                        <td>II</td>
-                    </tr>
+            <tr>
+              <td>Entre 18.5 e 24.9</td>
+              <td>Normal</td>
+              <td>0</td>
+            </tr>
 
-                    <tr>
-                        <td>Maior que 40.0</td>
-                        <td>Obesidade Grave</td>
-                        <td>III</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>   
+            <tr>
+              <td>Entre 25.0 e 29.9</td>
+              <td>Sobrepeso</td>
+              <td>I</td>
+            </tr>
+
+            <tr>
+              <td>Entre 30.0 e 39.9</td>
+              <td>Obesidade</td>
+              <td>II</td>
+            </tr>
+
+            <tr>
+              <td>Maior que 40.0</td>
+              <td>Obesidade Grave</td>
+              <td>III</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
