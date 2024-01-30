@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h2>Sistema de multas</h2>
+    <label for="vel">Digite sua velocidade: </label>
+    <input type="number" id="vel">
+    <button type="submit" id="btnMult">Verificar</button>
+
+    <p></p>
+
+    <h2>Sistema de Nacionalidade</h2>
+    <label for="nac">Digite o seu País: </label>
+    <input type="text" name="nac" id="nac">
+    <button type="submit" id="btnPs">Verificar</button>
+
+    <div class="resp"></div>
+
+    <script>
+        let veloc = document.getElementById('vel');
+        let btnMulta = document.getElementById('btnMult');
+        let btnPais = document.getElementById('btnPs');
+        let resp = document.querySelector('p');
+        let pais = document.getElementById('nac')
+        let resp2 = document.querySelector('div.resp');
+        
+
+        btnMulta.addEventListener('click', () => {
+            let vel = Number(veloc.value);
+            
+            if(vel > 60){
+                resp.innerText = `Sua velocidade ultrapassou a velocidade permitida. MULTADO!` 
+            }else{
+                resp.innerText = `Sua velocidade não ultrapassou a velocidade permitida. Siga com cuidado!`
+            }
+        })
+
+        btnPais.addEventListener('click', () => {
+            let nac = pais.value;
+            
+            if(nac = 'Brasil'){
+                resp2.innerText = `Você é brasileiro` 
+            }else{
+                resp2.innerText = `Você é estrangeiro`
+            }
+        })
+
+        
+    </script>
+</body>
+</html>
